@@ -1,19 +1,6 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Table</title>
-    
-    
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Baloo+Bhaina'>
-
-        <link rel="stylesheet" href="css/style.css">
-
-    
-    
-    
-  </head>
+<html>
+  {% include head.html %}
 
   <body>
 
@@ -28,62 +15,19 @@
     <table id="table" class="table table-striped">
     <thead>
         <tr>
-            <td>Repository</td>
-            <td>Docs</td>
-            <td>Badge</td>
+            <td>Student:</td>
+            <td>Link:</td>
+            <td>Status:</td>
         </tr></thead>
     <tbody>
         <tr>
-            <td>Software Developer</td>
-            <td>Intel</td>
-            <td>Warsaw</td>
+            <td>{{ post.studname }}</td>
+          <td><a href="s/{{post.studname}}/{{ post.studsite }}/"{{ post.studname }}'s Site</a></td>
+            
+            <td><img src="a/status/{{ post.status }}.svg" /></td>
         </tr>
-        <tr>
-            <td>Junior Web Developer</td>
-            <td>Atlassian</td>
-            <td>Sydney</td>
-        </tr>
-        <tr>
-            <td>UX Developer</td>
-            <td>Microsoft</td>
-            <td>Warsaw</td>
-        </tr>
-        <tr>
-            <td>Web Designer</td>
-            <td>Intel</td>
-            <td>Warsaw</td>
-        </tr>
-        <tr>
-            <td>Junior Front-End Developer</td>
-            <td>SII</td>
-            <td>London</td>
-        </tr>
-        <tr>
-            <td>Senior Java Developer</td>
-            <td>IBM</td>
-            <td>Warsaw</td>
-        </tr>
-        <tr>
-            <td>UX Developer</td>
-            <td>SII</td>
-            <td>Warsaw</td>
-        </tr>
-        <tr>
-            <td>Front-End Developer</td>
-            <td>Spartez</td>
-            <td>Gdansk</td>
-        </tr>
-        <tr>
-            <td>Back-End Developer</td>
-            <td>PGE Software</td>
-            <td>Gdansk</td>
-        </tr>
-        <tr>
-            <td>JavaScript Developer</td>
-            <td>GetResponse</td>
-            <td>Gdansk</td>
-        </tr>
-        </tbody></table>
+        </tbody>
+            </table>
 </div>
     
         <script src="js/index.js"></script>
